@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Dolphins</h2>
+    <input type="number" id="d1" placeholder="Score 1">
+    <input type="number" id="d2" placeholder="Score 2">
+    <input type="number" id="d3" placeholder="Score 3">
+
+    <h2>Koalas</h2>
+    <input type="number" id="k1" placeholder="Score 1">
+    <input type="number" id="k2" placeholder="Score 2">
+    <input type="number" id="k3" placeholder="Score 3">
+
+    <br><br>
+    <button onclick="check()">Check</button>
+
+<script>
+    dolphinsAvg = (Number(d1.value) + Number(d2.value) + Number(d3.value)) / 3;
+    koalasAvg = (Number(k1.value) + Number(k2.value) + Number(k3.value)) / 3;
+     if (dolphinsAvg > koalasAvg && dolphinsAvg >= 100) {
+    console.log("Dolphins win");
+    } else if (koalasAvg > dolphinsAvg && koalasAvg >= 100) {
+        console.log("Koalas win ");
+    } else if (
+        dolphinsAvg === koalasAvg &&
+        dolphinsAvg >= 100 &&
+        koalasAvg >= 100
+    ) {
+        console.log("Hòa");
+    } else {
+        console.log("Không đội nào giành được cúp");
+    }
+
+</script>
+</body>
+</html>
