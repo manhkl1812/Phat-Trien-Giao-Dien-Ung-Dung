@@ -9,6 +9,10 @@ import UseRefDemo from './components/useRef.jsx'
 import UseReducerDemo from './components/useReducer.jsx'
 import { ThemeContext } from "./components/them.jsx";
 import UseContextDemo from "./components/useContext.jsx";
+import MyComponents from './components/mycomponents.jsx';
+import Asd from './components/asd.jsx';
+import API from './components/API.jsx';
+
 
 function App() {
 
@@ -27,13 +31,17 @@ function App() {
     /*Bai tap review 1 hook useRef */
   // return <UseRefDemo />;
     /*Bai tap review 1 hook useReducer */
-  return <UseReducerDemo />;
+  // return <UseReducerDemo />;
   /*Bai tap review 1 hook useCOntext */
   // return (
   //   <ThemeContext.Provider value={"dark"}>
   //     <UseContextDemo />
   //   </ThemeContext.Provider>
   // );
+
+  // return (<MyComponents />);
+ 
+  return (<API />);
 
 
 
